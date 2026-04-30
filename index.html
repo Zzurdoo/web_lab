@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiberplane | DevOps Productivity</title>
+    <meta name="description" content="Reimagining DevOps productivity with investigative notebooks.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="3" height="3" fill="white"/>
+                    <rect x="7" y="2" width="3" height="3" fill="white"/>
+                    <rect x="2" y="7" width="8" height="3" fill="white"/>
+                </svg>
+            </div>
+            <span>fiberplane</span>
+            <span class="logo-beta">Beta</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Autometrics <span class="nav-tag">New</span></a></li>
+                <li><a href="#">Use cases ▾</a></li>
+                <li><a href="#">Learn ▾</a></li>
+                <li><a href="#">Open Source</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header-btns">
+            <a href="#" class="btn-login" style="background: #f3f4f6; padding: 8px 16px; border-radius: 6px;">Log in</a>
+            <a href="#" class="btn-try">Try for free ›</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero-headline">
+                <div class="headline-row row-1">
+                    <div class="word-wrap">
+                        DevOps
+                        <div class="indicator" style="color: var(--border-orange);">
+                            <div class="avatar-on-indicator">
+                                <div class="avatar-circle" style="outline: 3px solid var(--border-orange);"><img src="avatar1.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="headline-row row-2">
+                    <div class="word-wrap">
+                        productivity
+                        <div class="indicator" style="color: var(--border-pink);">
+                            <div class="avatar-on-indicator">
+                                <div class="avatar-circle" style="outline: 3px solid var(--border-pink);"><img src="avatar3.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="headline-row row-3">
+                    <span class="with-italic">with</span>
+                    <div class="indicator on-left" style="color: var(--border-purple); margin-right: 25px; margin-left: 10px;">
+                        <div class="avatar-on-indicator">
+                            <div class="avatar-circle" style="outline: 3px solid var(--border-purple);"><img src="avatar2.png"></div>
+                        </div>
+                    </div>
+                    <span class="pill-investigative">
+                        investigative
+                    </span>
+                </div>
+                <div class="headline-row row-4">
+                    <div class="word-wrap">
+                        notebooks
+                        <div class="indicator" style="color: var(--border-blue);">
+                            <div class="avatar-on-indicator bottom">
+                                <div class="avatar-circle" style="outline: 3px solid var(--border-blue);"><img src="avatar4.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </h1>
+
+            <p class="hero-subtext">
+                All your observability data and infrastructure knowledge in one collaborative notebooks
+            </p>
+            <a href="#" class="btn-get-started">
+                Get started for free ›
+            </a>
+        </section>
+
+        <!-- Section 1: Dashboard Interface -->
+        <section class="section-dashboard">
+            <div class="gradient-bg">
+                <div class="dashboard-window">
+                    <img src="dashboard.png" alt="Fiberplane Dashboard">
+                </div>
+            </div>
+            
+            <div class="video-cta">
+                <span>or watch the whole video</span>
+                <a href="#" class="btn-watch">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    Watch video
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 2: Autometrics -->
+        <section class="section-autometrics">
+            <div class="autometrics-card">
+                <div class="auto-logo-top">
+                    <div class="auto-m-icon"></div>
+                    <span>Autometrics</span>
+                </div>
+                <div class="autometrics-content">
+                    <h2>Introducing Autometrics</h2>
+                    <p>An open source micro framework for observability that makes it trivial to instrument your code and writes Prometheus queries for you.</p>
+                    <div class="auto-btns">
+                        <a href="#" class="btn-auto-site">Autometrics website ›</a>
+                        <a href="#" class="btn-github">GitHub ›</a>
+                    </div>
+                </div>
+                <div class="autometrics-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <pre><code><span class="keyword">#[autometrics]</span>
+<span class="keyword">async fn</span> <span class="function">index</span>(request: Request) -> Response {
+  <span class="comment">// Your logic here</span>
+}</code></pre>
+                    </div>
+
+                    <div class="middle-window">
+                        <div class="middle-header">Autometrics</div>
+                        <p>View the live metrics for the index function:</p>
+                        <ul class="middle-list">
+                            <li>Requests</li>
+                            <li>Error rate</li>
+                            <li>Latency</li>
+                        </ul>
+                    </div>
+
+                    <div class="graph-window">
+                        <div class="graph-header">
+                            <div class="graph-tools">
+                                <span class="tool-label">Type</span>
+                                <div class="tool-icons">
+                                    <span class="t-icon active">📈</span>
+                                    <span class="t-icon">📊</span>
+                                </div>
+                                <span class="tool-label">Stacking</span>
+                                <div class="tool-icons">
+                                    <span class="t-icon">⚠️</span>
+                                    <span class="t-icon">📊</span>
+                                    <span class="t-icon">%</span>
+                                </div>
+                            </div>
+                            <div class="graph-tabs">
+                                <span class="active">Graph</span>
+                                <span>Table</span>
+                            </div>
+                        </div>
+                        <div class="graph-placeholder"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Tech Stack & Headline -->
+        <section class="section-tech-stack">
+            <div class="icons-dock">
+                <img src="https://prometheus.io/assets/prometheus_logo_grey.svg" alt="Prometheus" class="dock-logo">
+                <img src="https://kubernetes.io/images/favicon.png" alt="Kubernetes" class="dock-logo">
+                <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker" class="dock-logo">
+                <div class="dock-proxy">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="white"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5-10-5-10 5z"/></svg>
+                    <span>PROXY</span>
+                </div>
+                <span class="soon-text">Soon</span>
+            </div>
+            <h2 class="serif-display">Ditch the screenshots, <br> get the full picture.</h2>
+            <p class="sub-detail">Actionable intelligence with our WebAssembly integrations that connect to your stack.</p>
+        </section>
+
+        <!-- Section 4: Terminal to Notebook -->
+        <section class="section-terminal">
+            <div class="terminal-container">
+                <div class="terminal-header-row">
+                    <h2 class="serif-display">From Terminal, <br> straight to Notebook.</h2>
+                    <p class="terminal-subtext">Record, share, and document your shell investigations—Notebooks keep track of it all.</p>
+                </div>
+                
+                <div class="terminal-visual-cluster">
+                    <div class="terminal-window">
+                        <div class="window-controls">
+                            <span class="ctrl red"></span>
+                            <span class="ctrl yellow"></span>
+                            <span class="ctrl green"></span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line"><span class="prompt">></span> fp run kubectl logs my-pod</div>
+                            <div class="terminal-output">
+                                time="2022-10-13T10:18:32Z" level=info msg="Starting Locust_exporter..."<br>
+                                time="2022-10-13T10:18:32Z" level=info msg="Build context (go=901.18.2)..."<br>
+                                time="2022-10-13T10:18:32Z" level=info msg="Listening on :9646" source="main.go: 449"
+                            </div>
+                            <div class="terminal-link">-> Created cell: https://fiberplane.com/notebook/NUKNL...</div>
+                        </div>
+                    </div>
+
+                    <div class="notebook-table-window">
+                        <div class="table-header">
+                            <div class="imported-badge">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                                Imported logs
+                            </div>
+                            <div class="table-path">/Laurence/shell-analysis > kubectl logs locust-metrics...</div>
+                        </div>
+                        <div class="table-filters">
+                            <div class="time-picker">2021-11-29T09:04:55.353Z to 2021-11-29T09:04:55.353Z</div>
+                            <div class="table-tabs">
+                                <span>Graph</span>
+                                <span class="active">Table</span>
+                            </div>
+                        </div>
+                        <table class="logs-table">
+                            <thead>
+                                <tr>
+                                    <th>Timestamp</th>
+                                    <th>Document</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2022-10-13T10:18:32.000Z</td>
+                                    <td>Body: Level=Info Msg="Starting Locust_exporter..."</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-10-13T10:18:32.000Z</td>
+                                    <td>Body: Level=Info Msg="Build Context (go=901.18.2)..."</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Collaboration -->
+        <section class="section-collaboration">
+            <!-- Top Log Snippet (Absolute positioned) -->
+            <div class="top-log-snippet">
+                <span class="result-badge">3</span>
+                2022-10-13T10:18:32.000Z Body: Level=Info Msg="Starting Locust_ex..."
+            </div>
+
+            <!-- Floating Avatars Left -->
+            <div class="floating-avatars left">
+                <div class="float-pill"><span class="badge pink">C</span> <span class="name pink">Charlotte</span></div>
+                <div class="float-pill"><span class="badge dark">J</span> <span class="name pink">Juliette</span></div>
+                <div class="float-pill"><span class="badge red">M</span> <span class="name red">Mason</span></div>
+                <div class="float-pill"><span class="badge green">E</span> <span class="name green">Eva</span></div>
+                <div class="float-pill"><span class="badge yellow">P</span> <span class="name yellow">Patrick</span></div>
+                <div class="float-pill"><span class="badge orange">L</span> <span class="name orange">Laurence</span></div>
+                <div class="float-pill"><span class="badge cyan">K</span> <span class="name cyan">Kingsley</span></div>
+                <div class="float-pill"><span class="badge green">A</span> <span class="name green">Akihiro</span></div>
+            </div>
+
+            <div class="collab-center">
+                <h2 class="serif-display" style="text-align: left; margin: 0 auto 2rem auto; width: max-content;">Your team,<br>literally on the<br>same page.</h2>
+                
+                <div class="collab-share-widget">
+                    <div class="collab-avatars">
+                        <div class="collab-avatar" style="background: url('https://i.pravatar.cc/100?img=1') center/cover;"></div>
+                        <div class="collab-avatar text-avatar purple-bg" style="width:32px;height:32px;">M</div>
+                        <div class="collab-avatar" style="background: url('https://i.pravatar.cc/100?img=3') center/cover;"></div>
+                        <div class="collab-plus">3</div>
+                    </div>
+                    <div class="divider"></div>
+                    <button class="btn-share">Share</button>
+                </div>
+                
+                <p class="sub-detail">Share notebooks to involve<br>your team in realtime.</p>
+            </div>
+
+            <!-- Floating Avatars Right -->
+            <div class="floating-avatars right">
+                <div class="float-pill"><span class="badge blue">M</span> <span class="name blue">May-Li</span></div>
+                <div class="float-pill"><span class="badge cyan">R</span> <span class="name cyan">Richard</span></div>
+                <div class="float-pill"><span class="badge green">K</span> <span class="name green">Katel...</span></div>
+                <div class="float-pill"><span class="badge darkblue">S</span> <span class="name darkblue">Sung-Ji Kim</span></div>
+                <div class="float-pill"><span class="badge purple">D</span> <span class="name purple">Davidson</span></div>
+                <div class="float-pill"><span class="badge cyan">R</span> <span class="name cyan">Rich...</span></div>
+                <div class="float-pill"><span class="badge purple">L</span> <span class="name purple">Luciana</span></div>
+                <div class="float-pill"><span class="badge purple">M</span> <span class="name purple">Mies</span></div>
+                <div class="float-pill"><span class="badge pink">M</span> <span class="name pink">Mac...</span></div>
+            </div>
+
+            <div class="collab-editor-card">
+                <!-- Features as Tabs -->
+                <div class="collab-features-tabs">
+                    <div class="feature-tab active">
+                        <div class="feature-icon dark">@</div>
+                        <p><strong>Tag, alert, and assign tasks<br>to team members.</strong></p>
+                    </div>
+                    <div class="feature-tab">
+                        <div class="feature-icon gray">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#d1d5db"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+                        </div>
+                        <p>Start discussions and resolve<br>issues in the notebook itself.</p>
+                    </div>
+                    <div class="feature-tab">
+                        <div class="feature-icon gray">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8" fill="none" stroke="#d1d5db" stroke-width="3"/><circle cx="12" cy="12" r="3" fill="#d1d5db"/></svg>
+                        </div>
+                        <p>Increase overall visibility and<br>work in a centralized place.</p>
+                    </div>
+                </div>
+
+                <!-- Editor Content -->
+                <div class="editor-body">
+                    <p class="editor-text">
+                        It happened <span class="editor-pill time"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/></svg> 20/12/2020, 04:23</span> . Let's debug this together <span class="editor-pill mention"><img src="https://i.pravatar.cc/100?img=11" alt=""> Laurence</span> .
+                    </p>
+                    <p class="editor-text">
+                        Here are some action items to divide the work and tackle this issue as soon as possible. Let me know if you have any questions!
+                    </p>
+
+                    <div class="editor-tasks">
+                        <div class="task-row">
+                            <div class="checkbox checked">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="white"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            </div>
+                            <span class="task-text">Look at http response rates</span>
+                            <span class="editor-pill mention"><img src="https://i.pravatar.cc/100?img=11" alt=""> Laurence</span>
+                        </div>
+                        
+                        <div class="task-row active-typing">
+                            <div class="checkbox"></div>
+                            <span class="task-text">Investigate logs for billing api</span>
+                            <span class="editor-pill mention"><img src="https://i.pravatar.cc/100?img=11" alt=""> Laurence</span>
+                            <span class="typing-cursor" style="margin-left: 8px;">@Mi|</span>
+                            <span class="dotted-line"></span>
+                            
+                            <!-- Mention Dropdown -->
+                            <div class="mention-dropdown">
+                                <div class="dropdown-header">Mention people</div>
+                                <div class="dropdown-item">
+                                    <div class="collab-avatar text-avatar purple-bg" style="width:24px;height:24px;font-size:0.6rem;">M</div>
+                                    <span class="dropdown-name">Mies</span>
+                                    <span class="dropdown-hint">Insert</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <div class="collab-avatar" style="width:24px;height:24px;background-image:url('https://i.pravatar.cc/100?img=5')"></div>
+                                    <span class="dropdown-name">Mira</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <div class="collab-avatar" style="width:24px;height:24px;background-image:url('https://i.pravatar.cc/100?img=1')"></div>
+                                    <span class="dropdown-name">May-Li</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <div class="collab-avatar text-avatar green-bg" style="width:24px;height:24px;font-size:0.6rem;">M</div>
+                                    <span class="dropdown-name">Mason</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section 6: Browser Mockup (fp.new) -->
+        <section class="section-fp-new">
+            <div class="fp-header-grid">
+                <h2 class="serif-display">Just write <span class="fp-pill">fp.new</span> to start debugging.</h2>
+                <p class="fp-subtext">With <span class="highlight">Fiber</span>plane it's go time in just seconds.</p>
+            </div>
+
+            <div class="browser-mockup">
+                <div class="browser-top-bar">
+                    <div class="window-controls">
+                        <span class="ctrl red"></span>
+                        <span class="ctrl yellow"></span>
+                        <span class="ctrl green"></span>
+                    </div>
+                    
+                    <div class="browser-tabs">
+                        <div class="browser-tab active">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                            <span class="tab-title">Region US-east...</span>
+                            <span class="tab-close">×</span>
+                        </div>
+                        <div class="browser-tab new-tab">+</div>
+                    </div>
+                </div>
+
+                <div class="browser-nav-bar">
+                    <div class="nav-actions">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d1d5db" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+
+                    <div class="address-bar-container">
+                        <div class="address-bar">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            <span class="url-text">fp.new</span>
+                            <div class="address-icons">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <img src="https://i.pravatar.cc/100?img=12" alt="" class="profile-pic-small">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-extensions">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                    </div>
+                </div>
+
+                <div class="browser-content">
+                    <div class="content-secondary-header">
+                        <div class="breadcrumb">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                            Notebooks
+                        </div>
+                        <div class="collab-share-widget small-widget">
+                            <div class="collab-avatars">
+                                <div class="collab-avatar" style="background: url('https://i.pravatar.cc/100?img=1') center/cover;"></div>
+                                <div class="collab-avatar" style="background: url('https://i.pravatar.cc/100?img=3') center/cover;"></div>
+                            </div>
+                            <button class="btn-share">Share</button>
+                            <div class="divider"></div>
+                            <button class="btn-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+                            </button>
+                            <button class="btn-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <h3 class="browser-header">Region US-east went down</h3>
+                    <p class="browser-meta">Created just now • Last modified just now</p>
+
+                    <div class="browser-tags">
+                        <span class="btag blue">tier:backend</span>
+                        <span class="btag pink">status:open</span>
+                        <span class="btag yellow">service:api</span>
+                        <button class="btag add-tag">+ Add label</button>
+                    </div>
+
+                    <div class="time-range-picker">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <div class="time-box">2021-11-29T09:04:55.353Z</div>
+                        <span class="to-text">to</span>
+                        <div class="time-box">2021-11-29T09:04:55.353Z</div>
+                        <div class="time-dropdown-btn">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="query-area" style="margin-top: 3rem;">
+                        <div class="query-line">
+                            <span class="query-prompt" style="color: #3b82f6; font-weight: bold;">/</span>
+                            <span class="typing-cursor" style="height: 1.2rem; background: #3b82f6;"></span>
+                        </div>
+                        
+                        <!-- Floating Dropdown Detailed -->
+                        <div class="query-dropdown detailed-dropdown">
+                            <div class="q-item">
+                                <img src="https://prometheus.io/assets/prometheus_logo_grey.svg" alt="" class="q-icon">
+                                <span class="q-text">Prometheus query</span>
+                                <span class="q-insert">Insert</span>
+                            </div>
+                            <div class="q-item">
+                                <svg class="q-icon elastic-svg" viewBox="0 0 24 24" fill="#00bfb3"><path d="M10 2L2 12l8 10 8-10L10 2zm0 4.5l5.5 5.5-5.5 5.5-5.5-5.5L10 6.5z"/></svg>
+                                <span class="q-text">Elasticsearch query</span>
+                            </div>
+                            <div class="q-item">
+                                <svg class="q-icon loki-svg" viewBox="0 0 24 24" fill="#d14747"><path d="M12 2L2 12l10 10 10-10L12 2zm0 4l6 6-6 6-6-6 6-6z"/></svg>
+                                <span class="q-text">Loki query</span>
+                            </div>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            <div class="dropdown-subheader">Collaboration</div>
+                            <div class="q-item">
+                                <svg class="q-icon chat-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                                <span class="q-text">Discussion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Templates & Features -->
+        <section class="section-templates">
+            <h2 class="serif-display templates-heading">Easily create templates for...</h2>
+            
+            <div class="features-grid">
+                <div class="feature-col">
+                    <svg class="feat-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"/></svg>
+                    <h3 class="feat-title">Incidents</h3>
+                    <p class="feat-desc">Debug and analyse using timelines, data and reporting tools.</p>
+                </div>
+                <div class="feature-col">
+                    <svg class="feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    <h3 class="feat-title">Post-incident review</h3>
+                    <p class="feat-desc">Debrief and learn from incidents to improve across the board.</p>
+                </div>
+                <div class="feature-col">
+                    <svg class="feat-icon" viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="9" width="2" height="6"/><rect x="8" y="4" width="2" height="16"/><rect x="12" y="11" width="2" height="2"/><rect x="16" y="7" width="2" height="10"/><rect x="20" y="12" width="2" height="2"/></svg>
+                    <h3 class="feat-title">Runbooks</h3>
+                    <p class="feat-desc">Prevent and prepare for incidents by looking for irregularities.</p>
+                </div>
+            </div>
+
+            <div class="stacked-cards-container">
+                <!-- Background papers -->
+                <div class="bg-paper bg-paper--depth-3"></div>
+                <div class="bg-paper bg-paper--depth-2"></div>
+                <div class="bg-paper bg-paper--depth-1"></div>
+
+                <!-- Main Card -->
+                <div class="template-card">
+                    <h3 class="template-title serif-display">API Runbook</h3>
+                    <p class="template-meta">Created just now · Last modified just now</p>
+                    
+                    <div class="template-tags">
+                        <span class="btag t-green">type:template</span>
+                        <span class="btag t-red">severity:critical</span>
+                        <span class="btag t-blue">service:billing</span>
+                        <button class="btag add-tag">+ Add label</button>
+                    </div>
+
+                    <ul class="template-checklist">
+                        <li class="check-item">
+                            <input type="checkbox" checked class="t-checkbox">
+                            <span class="task-text">1. Check the API response times</span>
+                            <div class="inline-avatar highlight-blue">
+                                <div class="collab-avatar" style="width:16px;height:16px;background:url('https://i.pravatar.cc/100?img=1') center/cover;"></div>
+                                <span class="avatar-name">Laurence</span>
+                            </div>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" class="t-checkbox">
+                            <span class="task-text">2. Investigate logs</span>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" class="t-checkbox">
+                            <span class="task-text">3. Rollback pods</span>
+                            <div class="inline-avatar highlight-purple">
+                                <div class="collab-avatar text-avatar purple-bg" style="width:16px;height:16px;font-size:0.5rem;line-height:16px;">M</div>
+                                <span class="avatar-name">Mies</span>
+                            </div>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" class="t-checkbox">
+                            <span class="task-text">4. Run prometheus query below</span>
+                        </li>
+                        <li class="check-item">
+                            <input type="checkbox" class="t-checkbox">
+                            <span class="task-text">5. Report to API service owner</span>
+                            <div class="inline-avatar highlight-blue">
+                                <div class="collab-avatar" style="width:16px;height:16px;background:url('https://i.pravatar.cc/100?img=5') center/cover;"></div>
+                                <span class="avatar-name">May-Li</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer CTA and Navigation -->
+    <footer class="site-footer">
+        <div class="cta-section">
+            <div class="cta-content">
+                <h2 class="serif-display cta-heading">Ready to go? Start<br>debugging together.</h2>
+                <button class="btn-primary cta-btn">Get started for free &gt;</button>
+            </div>
+            <div class="cta-subtext">
+                <p>Connect to your infrastructure in<br>minutes and you're all set-up.</p>
+            </div>
+        </div>
+
+        <div class="footer-grid">
+            <div class="footer-col newsletter-col">
+                <h4>Newsletter</h4>
+                <p>We'd love to share our love for engineering with you in our monthly newsletter.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="jane@domain.com" class="newsletter-input">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-col nav-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col nav-col">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-col nav-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Roadmap</a></li>
+                    <li><a href="#">Changelog</a></li>
+                    <li><a href="#">Book a demo</a></li>
+                </ul>
+            </div>
+            <div class="footer-col nav-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright-bar">
+            <p><span class="highlight-yellow">Fiber</span>plane B.V. © 2023</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple interactivity: subtle parallax effect for avatars
+        document.addEventListener('mousemove', (e) => {
+            const amount = 20;
+            const x = (e.clientX / window.innerWidth - 0.5) * amount;
+            const y = (e.clientY / window.innerHeight - 0.5) * amount;
+            
+            document.querySelectorAll('.avatar-wrapper').forEach((avatar, index) => {
+                const speed = (index + 1) * 0.5;
+                avatar.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
